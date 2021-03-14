@@ -46,14 +46,8 @@ class LoginController extends Controller
         if($request->get('mobile') != $user->mobile) {
             \Session::put('errors', 'Your mobile number not match in our system..!!');
             return back();
-        } else{
-            if (Hash::check('passwordToCheck', $user->password)) {
-                // Success
-                return redirect('/products');
-            }else{
-                return back();
-            }
-                      
+        } else{           
+            return redirect('/products');       
         }             
     }
   //  protected $redirectTo = '/products';

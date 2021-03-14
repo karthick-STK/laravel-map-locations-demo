@@ -5,11 +5,19 @@
     <body>
     <div class="container">
     <div class="row">
-        <div class="col-lg-12 my-3">
+        <div class="col-lg-6 my-3">
             <div class="pull-right">
                 <h4>Add Location Form</h4>
             </div>
         </div>
+
+        <div class="col-lg-6 my-3">
+            <div class="pull-right">
+            <button type="text"><a href="/git/laravel-map-locations-demo/public/products/address/map">View Maps</button>
+            </div>
+        </div>
+
+        
     </div> 
    
     @if(session()->has('message'))
@@ -18,7 +26,7 @@
     </div>
 @endif
 
-<form method="post" action="/git/laravel/public/products/store" >
+<form method="post" action="/git/laravel-map-locations-demo/public/products/store" >
   <!-- 2 column grid layout with text inputs for the first and last names -->
   @csrf
   <div class="row mb-4">
@@ -59,9 +67,9 @@
       </div>
     </div>
   </div>
-  <button type="submit" class="btn btn-primary btn-block mb-4 enroll">Save</button>
+  <button type="submit" class="btn btn-primary btn-block mb-4 enroll">Add Location</button>
 </form>
-<button type="text" onclick="getLocation()">Try It</button>    
+<button type="text" onclick="getLocation()">Get Map Address</button>    
 </div>
    </body>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
