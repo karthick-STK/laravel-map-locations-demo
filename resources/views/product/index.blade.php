@@ -13,7 +13,7 @@
 
         <div class="col-lg-6 my-3">
             <div class="pull-right">
-            <button type="text"><a href="/git/laravel-map-locations-demo/public/products/address/map">View Maps</button>
+            <button type="text"><a href="/git/laravel-map-locations-demo/public/products/address/map">View Maps</a></button>
             </div>
         </div>
 
@@ -57,13 +57,13 @@
     <div class="col">
       <div class="form-outline">
       <label class="form-label" for="form3Example1">Latitude</label>
-        <input type="number" id="lat" name="lat" class="form-control" />       
+        <input step="0.0000001" type="number" id="lat" name="lat" class="form-control" />       
       </div>
     </div>
     <div class="col">
       <div class="form-outline">
       <label class="form-label" for="form3Example2">Longitude</label>
-        <input type="number" id="long" name="long" class="form-control" />        
+        <input step="0.0000001" type="number" id="long" name="long" class="form-control" />        
       </div>
     </div>
   </div>
